@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jefe de Ruta</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="invalid_email">El email no es válido</string>
+    <string name="invalid_password">La contraseña es incorrecta</string>
+    <string name="list_of_clients">Lista de clientes de</string>
+    <string name="add_button_description">Añadir nuevo cliente</string>
+</resources>

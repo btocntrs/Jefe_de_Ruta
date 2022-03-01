@@ -7,7 +7,7 @@ import java.util.*
 val userList = listOf(
     User("Domingo Cabrera", "domingo.c@gruposinai.com.mx","domingo"),
     User("Manuel Ricardez", "manuel.r@gruposinai.com.mx","manuel"),
-    User("Alberto Contreras", "betocontreras@sinai.mx", "admin")
+    User("Alberto Contreras", "betocontreras@sinai.mx", "a")
 )
 
 val clients = listOf(

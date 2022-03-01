@@ -7,4 +7,10 @@
     <string name="invalid_password">La contraseña es incorrecta</string>
     <string name="list_of_clients">Lista de clientes de</string>
     <string name="add_button_description">Añadir nuevo cliente</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="prompt_client_name">Nombre del cliente</string>
+    <string name="next_button">Siguiente</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="required_field">Este campo es requerido</string>
+    <string name="title_client_name">Nombre del cliente</string>
 </resources>

@@ -14,7 +14,7 @@ data class Client(
     var city: String,
     var state: String
 ){
-    val fullAddress: String by FullAddrees()
+    val fullAddress: String by FullAddress()
 
     override fun equals(other: Any?): Boolean {
         val otherClient = other as Client
@@ -35,7 +35,7 @@ data class Client(
         return result
     }
 
-    class FullAddrees{
+    class FullAddress{
         operator fun getValue(client: Client, property: KProperty<*>): String {
             return buildString {
                 append("${client.street},")

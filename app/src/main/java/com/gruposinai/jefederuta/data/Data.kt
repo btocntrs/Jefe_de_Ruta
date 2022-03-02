@@ -11,16 +11,16 @@ val userList = listOf(
 )
 
 val clients = listOf(
-    Client(UUID.randomUUID().toString(), "Yooys",null,
+    Client(UUID.randomUUID().toString(), "Yooys",null, true, false, "",
         "Av. Hector Perez Martínez",null,null,"Revolución",
         24350, "Escárcega", "Campeche"),
-    Client(UUID.randomUUID().toString(), "All Express",null,
+    Client(UUID.randomUUID().toString(), "All Express",null, true, false, "",
         "Av. Justo Sierra Méndez",null,null,"Revolución",
         24350, "Escárcega", "Campeche"),
-    Client(UUID.randomUUID().toString(), "Michoacanos","Michoacanos de la Revolución",
+    Client(UUID.randomUUID().toString(), "Michoacanos","Michoacanos de la Revolución", true, true, "",
         "49 entre 23 y 25",null,null,"Revolución",
         24350, "Escárcega", "Campeche"),
-    Client(UUID.randomUUID().toString(), "Abarrotes Ojeda","Wero",
+    Client(UUID.randomUUID().toString(), "Abarrotes Ojeda","Wero", true, true, "",
         "Av. Concordia","23-A",null,"Fátima",
         24350, "Escárcega", "Campeche")
 )

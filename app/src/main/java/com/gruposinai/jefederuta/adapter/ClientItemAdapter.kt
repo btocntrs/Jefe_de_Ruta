@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.gruposinai.jefederuta.R
-import com.gruposinai.jefederuta.data.clients
+import com.gruposinai.jefederuta.data.Data.Companion.clients
 
 class ClientItemAdapter: RecyclerView.Adapter<ClientItemAdapter.ClientViewHolder>() {
 

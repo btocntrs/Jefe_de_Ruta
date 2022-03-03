@@ -19,5 +19,13 @@
     <string name="prompt_client_name">Name of client</string>
     <string name="required_field">This field is required</string>
     <string name="prompt_client_alias" translatable="false">Alias</string>
+    <string name="ice">Ice</string>
+    <string name="water">Water</string>
+    <string name="products">Products</string>
+    <string name="customer_type">Customer Type</string>
+    <string name="private_client">Private</string>
+    <string name="wholesaler_client">Wholesaler</string>
+    <string name="governmental">Governmental</string>
+    <string name="product_error">Select at least one product </string>
 
 </resources>

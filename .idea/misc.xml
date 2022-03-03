@@ -8,7 +8,8 @@
         <entry key="..\:/Users/BetoLap/AndroidStudioProjects/JefedeRuta/app/src/main/res/layout/client_item.xml" value="0.33" />
         <entry key="..\:/Users/BetoLap/AndroidStudioProjects/JefedeRuta/app/src/main/res/layout/fragment_client_list.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/BetoLap/AndroidStudioProjects/JefedeRuta/app/src/main/res/layout/fragment_login_user.xml" value="0.33" />
-        <entry key="..\:/Users/BetoLap/AndroidStudioProjects/JefedeRuta/app/src/main/res/layout/fragment_new_client_name.xml" value="0.25" />
+        <entry key="..\:/Users/BetoLap/AndroidStudioProjects/JefedeRuta/app/src/main/res/layout/fragment_new_client_name.xml" value="0.1" />
+        <entry key="..\:/Users/BetoLap/AndroidStudioProjects/JefedeRuta/app/src/main/res/layout/fragment_new_client_type.xml" value="0.1" />
       </map>
     </option>
   </component>

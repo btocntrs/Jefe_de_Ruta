@@ -9,9 +9,7 @@ data class Client(
     var iceBuyer: Boolean,
     var waterBuyer: Boolean,
     var customerType: String,
-    var street: String,
-    var externalNumber: String?,
-    var internalNumber: String?,
+    var address: String,
     var suburb: String,
     var cp: Int,
     var city: String,
@@ -28,9 +26,10 @@ data class Client(
         var result = clientID.hashCode()
         result = 31 * result + name.hashCode()
         result = 31 * result + (alias?.hashCode() ?: 0)
-        result = 31 * result + street.hashCode()
-        result = 31 * result + (externalNumber?.hashCode() ?: 0)
-        result = 31 * result + (internalNumber?.hashCode() ?: 0)
+        result = 31 * result + iceBuyer.hashCode()
+        result = 31 * result + waterBuyer.hashCode()
+        result = 31 * result + customerType.hashCode()
+        result = 31 * result + address.hashCode()
         result = 31 * result + suburb.hashCode()
         result = 31 * result + cp
         result = 31 * result + city.hashCode()
@@ -41,16 +40,7 @@ data class Client(
     class FullAddress{
         operator fun getValue(client: Client, property: KProperty<*>): String {
             return buildString {
-                append("${client.street},")
-
-                if(!client.externalNumber.isNullOrEmpty()){
-                    append(" ${client.externalNumber} Ext,")
-                }
-
-                if(!client.internalNumber.isNullOrEmpty()){
-                    append(" ${client.internalNumber} Int,")
-                }
-
+                append("${client.address},")
                 append(" Colonia ${client.suburb};")
                 append(" CP ${client.cp};")
                 append(" ${client.city},")

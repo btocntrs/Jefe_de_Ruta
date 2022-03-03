@@ -7,4 +7,9 @@
         <item name="errorIconDrawable">@drawable/ic_error</item>
         <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
     </style>
+
+    <!-- Divider style -->
+    <style name="Widget.JefeDeRuta.Divider" parent="">
+        <item name="android:background">?attr/dividerHorizontal</item>
+    </style>
 </resources>

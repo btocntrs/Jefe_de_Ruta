@@ -22,5 +22,13 @@
         <action
             android:id="@+id/action_newClientNameFragment_to_clientListFragment"
             app:destination="@id/clientListFragment" />
+        <action
+            android:id="@+id/action_newClientNameFragment_to_newClientTypeFragment"
+            app:destination="@id/newClientTypeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/newClientTypeFragment"
+        android:name="com.gruposinai.jefederuta.fragment.NewClientTypeFragment"
+        android:label="@string/customer_type"
+        tools:layout="@layout/fragment_new_client_type" />
 </navigation>

@@ -13,4 +13,12 @@
     <string name="cancel_button">Cancelar</string>
     <string name="required_field">Este campo es requerido</string>
     <string name="title_client_name">Nombre del cliente</string>
+    <string name="ice">Hielo</string>
+    <string name="water">Agua</string>
+    <string name="products">Productos</string>
+    <string name="private_client">Particular</string>
+    <string name="wholesaler_client">Tienda/Mayoreo</string>
+    <string name="governmental">Dependencia Gubernamental</string>
+    <string name="customer_type">Tipo de Cliente</string>
+    <string name="product_error">Selecciona por lo menos un producto </string>
 </resources>

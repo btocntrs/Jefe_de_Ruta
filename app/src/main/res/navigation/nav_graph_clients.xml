@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_new_client_name">
         <action
             android:id="@+id/action_newClientNameFragment_to_clientListFragment"
-            app:destination="@id/clientListFragment" />
+            app:destination="@id/clientListFragment"
+            app:popUpTo="@id/clientListFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_newClientNameFragment_to_newClientTypeFragment"
             app:destination="@id/newClientTypeFragment" />
@@ -30,5 +32,24 @@
         android:id="@+id/newClientTypeFragment"
         android:name="com.gruposinai.jefederuta.fragment.NewClientTypeFragment"
         android:label="@string/customer_type"
-        tools:layout="@layout/fragment_new_client_type" />
+        tools:layout="@layout/fragment_new_client_type" >
+        <action
+            android:id="@+id/action_newClientTypeFragment_to_newClientAddressFragment"
+            app:destination="@id/newClientAddressFragment" />
+        <action
+            android:id="@+id/action_newClientTypeFragment_to_clientListFragment"
+            app:destination="@id/clientListFragment"
+            app:popUpTo="@id/clientListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/newClientAddressFragment"
+        android:name="com.gruposinai.jefederuta.fragment.NewClientAddressFragment"
+        android:label="@string/prompt_client_address" >
+        <action
+            android:id="@+id/action_newClientAddressFragment_to_clientListFragment"
+            app:destination="@id/clientListFragment"
+            app:popUpTo="@id/clientListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

@@ -12,6 +12,7 @@
     <string name="list_of_clients">List of clients of </string>
     <string name="next_button">Next</string>
     <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
 
     <!--String related to new client form-->
     <string name="title_client_name">Name of the client</string>
@@ -19,6 +20,11 @@
     <string name="prompt_client_name">Name of client</string>
     <string name="required_field">This field is required</string>
     <string name="prompt_client_alias" translatable="false">Alias</string>
+    <string name="prompt_client_address">Client address</string>
+    <string name="prompt_client_suburb">Suburb</string>
+    <string name="prompt_client_cp">Postal Code</string>
+    <string name="prompt_client_city">City</string>
+    <string name="prompt_client_state">State</string>
     <string name="ice">Ice</string>
     <string name="water">Water</string>
     <string name="products">Products</string>

@@ -54,9 +54,6 @@ class LoginUserFragment : Fragment() {
         } else {
             setErrorUserEmailField(true)
         }
-
-
-
     }
 
     /*

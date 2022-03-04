@@ -85,8 +85,8 @@ class NewClientNameFragment : Fragment() {
     }
 
     private fun cancel(){
-        val action = NewClientNameFragmentDirections.actionNewClientNameFragmentToClientListFragment()
-        findNavController().navigate(action)
+        sharedViewModel.resetDates()
+        findNavController().navigate(R.id.action_newClientNameFragment_to_clientListFragment)
     }
 
 }

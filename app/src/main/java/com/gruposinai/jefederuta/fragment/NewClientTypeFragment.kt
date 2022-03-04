@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.gruposinai.jefederuta.R
 import com.gruposinai.jefederuta.databinding.FragmentNewClientTypeBinding
 import com.gruposinai.jefederuta.model.ClientViewModel
@@ -30,15 +30,14 @@ class NewClientTypeFragment : Fragment() {
         binding.apply {
             sharedViewModel = this@NewClientTypeFragment.sharedViewModel
             nextButton.setOnClickListener { nextScreen() }
+            cancelButton.setOnClickListener { cancel() }
         }
     }
 
     private fun nextScreen(){
         if(sharedViewModel.iceBuyer.value!! || sharedViewModel.waterBuyer.value!!){
             setErrorCustomerType(false)
-            val template = "Ice = ${sharedViewModel.iceBuyer.value} - Water = ${sharedViewModel.waterBuyer.value}"
-            Toast.makeText(context, template, Toast.LENGTH_LONG).show()
-
+            findNavController().navigate(R.id.action_newClientTypeFragment_to_newClientAddressFragment)
         } else {
             setErrorCustomerType(true)
         }
@@ -55,5 +54,9 @@ class NewClientTypeFragment : Fragment() {
         }
     }
 
+    private fun cancel(){
+        sharedViewModel.resetDates()
+        findNavController().navigate(R.id.action_newClientTypeFragment_to_clientListFragment)
+    }
 
 }

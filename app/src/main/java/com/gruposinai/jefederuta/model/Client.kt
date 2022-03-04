@@ -11,7 +11,7 @@ data class Client(
     var customerType: String,
     var address: String,
     var suburb: String,
-    var cp: Int,
+    var postalCode: Int,
     var city: String,
     var state: String
 ){
@@ -31,10 +31,23 @@ data class Client(
         result = 31 * result + customerType.hashCode()
         result = 31 * result + address.hashCode()
         result = 31 * result + suburb.hashCode()
-        result = 31 * result + cp
+        result = 31 * result + postalCode
         result = 31 * result + city.hashCode()
         result = 31 * result + state.hashCode()
         return result
+    }
+
+    override fun toString(): String {
+        return """Name: $name
+            Alias: $alias
+            Ice: $iceBuyer
+            Water: $waterBuyer
+            Address: $address
+            Suburb: $suburb
+            Postal Code: $postalCode
+            City: $city
+            State: $state
+        """.trimIndent().trimMargin()
     }
 
     class FullAddress{
@@ -42,7 +55,7 @@ data class Client(
             return buildString {
                 append("${client.address},")
                 append(" Colonia ${client.suburb};")
-                append(" CP ${client.cp};")
+                append(" CP ${client.postalCode};")
                 append(" ${client.city},")
                 append(" ${client.state}.")
             }

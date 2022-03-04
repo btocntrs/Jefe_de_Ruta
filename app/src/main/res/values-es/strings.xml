@@ -21,4 +21,10 @@
     <string name="governmental">Dependencia Gubernamental</string>
     <string name="customer_type">Tipo de Cliente</string>
     <string name="product_error">Selecciona por lo menos un producto </string>
+    <string name="prompt_client_address">Dirección del cliente</string>
+    <string name="prompt_client_suburb">Colonia</string>
+    <string name="prompt_client_cp">Código Postal</string>
+    <string name="prompt_client_city">Ciudad</string>
+    <string name="prompt_client_state">Estado</string>
+    <string name="save_button">Guardar</string>
 </resources>
